@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landingpage.css">
+    <link rel="stylesheet" href="profile.css">
+    <title>Profile</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="hi"><h1>BACK</h1></a>
+        <div>
+            <a href="profile.html" class="ho"><li>Profile</li></a>
+            <a href="resturants.html" class="ho"><li>Resturants</li></a>
+        </div>
+    </nav>
+
+    <main class="profile-main">
+
+      <section class="profile-hero">
+        <div>
+          <h2>Create your restaurant listing</h2>
+          <p>Enter your restaurant details below, then preview your submission instantly on the page.</p>
+        </div>
+      </section>
+
+      <section class="submission-panel">
+
+        <form id="restaurant-form" class="restaurant-form">
+
+          <div class="form-group">
+            <label for="restaurant-name">Restaurant Name</label>
+            <input id="restaurant-name" name="name" type="text" placeholder="The Spice House" required>
+          </div>
+
+          <div class="form-group">
+            <label for="restaurant-cuisine">Cuisine</label>
+            <input id="restaurant-cuisine" name="cuisine" type="text" placeholder="Indian" required>
+          </div>
+
+          <div class="form-group">
+            <label for="restaurant-location">Location</label>
+            <input id="restaurant-location" name="location" type="text" placeholder="Downtown" required>
+          </div>
+
+
+          <div class="form-group">
+            <label for="restaurant-price">Price Level</label>
+            <input id="restaurant-price" name="price" type="text" placeholder="$$" required>
+          </div>
+
+
+          <div class="form-group">
+            <label for="restaurant-rating">Rating</label>
+            <input id="restaurant-rating" name="rating" type="number" min="1" max="5" step="0.1" value="4.5" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="restaurant-status">Status</label>
+            <select id="restaurant-status" name="status">
+              <option value="Open now">Open now</option>
+              <option value="Delivery">Delivery</option>
+              <option value="Healthy">Healthy</option>
+              <option value="Chef Special">Chef Special</option>
+              <option value="Dessert">Dessert</option>
+
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="restaurant-image">Image URL</label>
+            <input id="restaurant-image" name="image" type="url" placeholder="https://example.com/photo.jpg">
+          </div>
+
+          <div class="form-actions full-width">
+            <button type="submit">Add Restaurant</button>
+          </div>
+
+        </form>
+      </section>
+
+      <section class="submission-results">
+        <h3>Your Restaurant Listings</h3>
+        <div id="submitted-restaurants" class="submitted-list"></div>
+        <p id="profile-no-results" class="no-results">No restaurants added yet. Use the form to create one!</p>
+      </section>
+
+    </main>
+
+    <script src="profile.js"></script>
+</body>
+</html>
