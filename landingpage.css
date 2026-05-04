@@ -1,0 +1,228 @@
+body{
+    margin: 2px;
+    background: white;
+}
+
+
+nav{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right,turquoise, rgb(246, 149, 246));
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.hi{
+    
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.ho{
+    list-style: none;
+    border: 1px rgba(226, 238, 238, 0.803) solid;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: right;
+    background-color: rgba(225, 240, 251, 0.27);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+
+
+.slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    gap: 10;
+    /* Enable horizontal scrolling */
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* Smooth scrolling behavior */
+    scroll-behavior: smooth;
+    /* Snap to each image */
+    scroll-snap-type: x mandatory;
+    /* Hide scrollbar but keep functionality */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    /* Improve touch scrolling on mobile */
+    -webkit-overflow-scrolling: touch;
+    /* Prevent vertical scrolling */
+    overscroll-behavior-y: none;
+    border-radius: 20px;
+}
+
+.main::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+
+
+
+.main img{
+    object-fit: cover;
+    border-radius: 20px;
+    width: 100%;
+    height: 450px;
+    float: center;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px rgba(71, 71, 71, 0.886);
+    /* Ensure images don't shrink */
+    flex-shrink: 0;
+    /* Snap alignment for smooth scrolling */
+    scroll-snap-align: start;
+}
+
+
+
+
+
+.row-posters{
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    overflow-x: auto;
+}
+
+.row-posters img{
+    height: 170px;
+    width: 250px;
+    border: 1px solid thistle;
+    border-radius: 10px;
+    background-color: ivory;
+}
+
+
+
+.bigrow-posters{
+    padding-top: 20px;
+    gap: 20px;
+    display: flex;
+    overflow-x: auto;
+}
+
+.bigrow-posters img{
+    height: 400px;
+    width: 280px;
+    border: 1px solid rgb(167, 214, 230);
+    border-radius: 20px;
+    background-color: ivory;
+
+}
+
+.menu img{
+    width: 100%;
+    height: 170px;
+    border-radius: 5px;
+}
+
+
+.menu {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.menu:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.25);
+}
+
+.special-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(45deg, #ff6b6b, #ffa500);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: bold;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.menu-content {
+  padding: 10px;
+}
+
+.menu-content h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rating {
+  color: #ffd700;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.rating span {
+  color: #666;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.menu-content p {
+  color: #666;
+  font-size: 12px;
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff6b6b;
+  margin-top: 8px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+
+.row-posters::-webkit-scrollbar,
+.bigrow-posters::-webkit-scrollbar{
+    height: 1px;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.specials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+

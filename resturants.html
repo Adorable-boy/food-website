@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landingpage.css">
+    <link rel="stylesheet" href="chill.css">
+    <title>Craze Food</title>
+</head>
+<body>
+
+   <nav>
+        
+        <a href="landingpage.html"  class="hi"><h1>BACK</h1></a>
+
+        <div>
+        <a href="profile.html" class="ho"><li>Profile</li></a>
+        <a href="resturants.html" class="ho"><li>Resturants</li></a>
+
+       </div>
+
+    </nav>
+
+
+
+    <main class="restaurant-page">
+      <section class="restaurant-header">
+        <div>
+          <h2>Find your favorite restaurant</h2>
+          <p>Search by name, cuisine or location to discover the best dining spots on the site.</p>
+        </div>
+        <div class="search-box">
+          <input id="restaurant-search" type="search" placeholder="Search restaurants, cuisine or location...">
+        </div>
+      </section>
+
+      <div class="resturants" id="restaurant-list">
+        
+
+        <div class="resturant" data-name="Ocean Breeze" data-cuisine="Seafood" data-location="Harbor">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Ocean Breeze">
+          <div class="resturant-content">
+            <div class="resturant-top">
+              <h3>Ocean Breeze</h3>
+              <span class="badge delivery">Delivery</span>
+            </div>
+            <p class="cuisine">Seafood • Harbor</p>
+            <div class="meta">
+              <span class="rating">★ 4.7</span>
+              <span class="price">$14.99</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="resturant" data-name="Green Garden" data-cuisine="Vegan" data-location="Uptown">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Green Garden">
+          <div class="resturant-content">
+            <div class="resturant-top">
+              <h3>Green Garden</h3>
+              <span class="badge healthy">Healthy</span>
+            </div>
+            <p class="cuisine">Vegan • Uptown</p>
+            <div class="meta">
+              <span class="rating">★ 4.9</span>
+              <span class="price">$6.99</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="resturant" data-name="Bella Pasta" data-cuisine="Italian" data-location="Riverside">
+          <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Bella Pasta">
+          <div class="resturant-content">
+            <div class="resturant-top">
+              <h3>Bella Pasta</h3>
+              <span class="badge open">Open now</span>
+            </div>
+            <p class="cuisine">Italian • Riverside</p>
+            <div class="meta">
+              <span class="rating">★ 4.6</span>
+              <span class="price">$10.99</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="resturant" data-name="Tokyo Sushi" data-cuisine="Japanese" data-location="Central">
+          <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tokyo Sushi">
+          <div class="resturant-content">
+            <div class="resturant-top">
+              <h3>Tokyo Sushi</h3>
+              <span class="badge chef">Chef Special</span>
+            </div>
+            <p class="cuisine">Japanese • Central</p>
+            <div class="meta">
+              <span class="rating">★ 4.8</span>
+              <span class="price">$2.99</span>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="resturant" data-name="Sweet Bloom" data-cuisine="Bakery" data-location="Old Town">
+          <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sweet Bloom">
+          <div class="resturant-content">
+            <div class="resturant-top">
+              <h3>Sweet Bloom</h3>
+              <span class="badge dessert">Dessert</span>
+            </div>
+            <p class="cuisine">Bakery • Old Town</p>
+            <div class="meta">
+              <span class="rating">★ 4.9</span>
+              <span class="price">5.99$</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p id="no-results" class="no-results">No restaurants were found. Try another search term.</p>
+    </main>
+
+    <script src="restaurants.js"></script>
+
+</body>
+</html>
