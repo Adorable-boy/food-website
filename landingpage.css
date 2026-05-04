@@ -73,38 +73,6 @@ nav{
     display: none; /* Chrome, Safari, and Opera */
 }
 
-/* Navigation dots for the slider */
-.slider-nav {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    z-index: 10;
-}
-
-.slider-nav input {
-    display: none;
-}
-
-.slider-nav label {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.slider-nav label:hover {
-    background: rgba(255, 255, 255, 0.8);
-}
-
-.slider-nav input:checked + label {
-    background: white;
-}
-
 
 
 .main img{
